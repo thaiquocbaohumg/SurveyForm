@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="styles.css" rel="stylesheet" media="screen,print" />
+	<title>Build a survey form</title>
+</head>
+<body>
+	<main>
+		<h1 id="title">survey form</h1>
+		
+		<form id="survey-form" action="">
+			<div class="small">
+			<p id="description">Let us know how we can improve freeCodeCamp</p>
+				<div class="form-row">
+				    <div class="form-group col-md-6">
+				      <label for="name" id="name-label">Name</label>
+				      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+				    </div>
+				    <div class="form-group col-md-6">
+				      <label for="email" id="email-label">Email</label>
+				      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+				    </div>
+			    </div>
+
+				<div class="form-group">
+				    <label for="inputAddress">Address</label>
+				    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+				 </div>
+				 <div class="form-group">
+				    <label for="inputAddress2">Address 2</label>
+				    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+				 </div>
+
+
+				<div class="form-row">
+					<div class="form-group col-md-1">
+				      <label for="number" id="number-label">Age</label>
+				      <input type="number" class="form-control" id="number" placeholder="Age" min="1" max="125" required>
+				    </div>
+
+				    <div class="form-group col-md-6">
+				      <label for="inputCity">City</label>
+				      <input type="text" class="form-control" id="inputCity">
+				    </div>
+
+				    <div class="form-group col-md-2">
+				      <label for="inputZip">Zip</label>
+				      <input type="text" class="form-control" id="inputZip">
+				    </div>
+
+				    <div class="form-group col-md-3">
+				      <label for="dropdown">describes</label>
+				      <select id="dropdown" class="form-control">
+				        <option selected>Select an option</option>
+				        <option  value="student">Student</option>
+					    <option value="job">Full Time Job</option>
+					    <option value="learner">Full Time Learner</option>
+					    <option value="preferNo">Prefer not to say</option>
+      					<option value="other">Other</option>
+				      </select>
+				    </div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-6">
+						<label for="customRadio">* How likely is that you would recommend freeCodeCamp to a friend?</label><br>
+					</div>
+					<div class="col-md-6">
+						<ul id="preferences" style="list-style: none;">
+						<li class="custom-control custom-radio">
+						  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input radio" value="1">
+						  <label class="custom-control-label" for="customRadio1">Definitely</label>
+						</li>
+						<li class="custom-control custom-radio">
+						  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input radio" value="2">
+						  <label class="custom-control-label" for="customRadio2">Maybe</label>
+						</li>
+						</ul>
+					</div>
+				</div>
+				<br>
+
+			    <div class="form-row">
+				      <div class="labels col-md-6">
+				        <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+				      </div>
+				      <div class="col-md-6">
+				        <ul id="preferences" style="list-style: none;">
+				          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label></li>
+				          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</li>
+				          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Data Visualization</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Open Source Community</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Gitter help rooms</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Videos</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">City Meetups</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Wiki</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Additional Courses</label></li>
+				        </ul>
+				      </div>
+				</div>
+
+				<div class="form-group">
+				    <label for="exampleFormControlTextarea1">Any Comments or Suggestions?</label>
+				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your comment here!!!"></textarea>
+				</div>
+
+
+			  <div class="form-group row">
+			    <div class="col-sm-10">
+			      <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+			    </div>
+			  </div>
+			</div>
+		</form>
+	</main>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
